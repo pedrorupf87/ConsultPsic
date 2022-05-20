@@ -27,4 +27,20 @@ export class AcessoService {
     return this.http.delete(this.APIUrl + '/Escolaridade/' + val);
   }
 
+  consultaEspecialidade(): Observable<any[]>{
+    return this.http.get<any[]>(this.APIUrl + '/Especialidade');
+  }
+
+  insereEspecialidade(val : any){
+    return this.http.post(this.APIUrl + '/Especialidade', val);
+  }
+
+  alteraEspecialidade(val : any){
+    return this.http.put(this.APIUrl + '/Especialidade', val);
+  }
+
+  deletaEspecialidade(val : any){
+    return this.http.delete(this.APIUrl + '/Especialidade/' + val);
+  }
+
 }

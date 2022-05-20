@@ -32,7 +32,6 @@ export class EditaEscolaridadeComponent implements OnInit {
                  TXT_ESCOLARIDADE: this.TXT_ESCOLARIDADE};
     this.acesso.alteraEscolaridade(dados).subscribe(res => {
       alert(res.toString());
-});
+    });
   }
-
 }

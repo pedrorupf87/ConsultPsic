@@ -9,7 +9,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <app-edita-escolaridade [esc]="esc" *ngIf="EditaEscolaridade"></app-edita-escolaridade>
+        <app-edita-especialidade [esp]="esp" *ngIf="EditaEspecialidade"></app-edita-especialidade>
       </div>
     </div>
   </div>
@@ -19,21 +19,21 @@
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary float-right m-2" data-toggle="modal" data-target="#exampleModal"
   data-backdrop="static" data-keyboard="false" (click)="insereClick()">
-    Nova escolaridade
+    Nova Especialidade
   </button>
 
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>Cód. Escolaridade</th>
-        <th>Escolaridade</th>
+        <th>Cód. Especialidade</th>
+        <th>Especialidade</th>
         <th>Opções</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let dados of ListaEscolaridade">
-        <td>{{dados.COD_ESCOLARIDADE}}</td>
-        <td>{{dados.TXT_ESCOLARIDADE}}</td>
+      <tr *ngFor="let dados of ListaEspecialidade">
+        <td>{{dados.COD_ESPECIALIDADE}}</td>
+        <td>{{dados.TXT_ESPECIALIDADE}}</td>
         <td>
           <button type="button" class="btn btn-light mr-1" data-toggle="modal" data-target="#exampleModal"
             data-backdrop="static" data-keyboard="false" (click)="editaClick(dados)">
