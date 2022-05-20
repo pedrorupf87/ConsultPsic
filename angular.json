@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ConsultPsic"
+    }
+  },
+  "defaultProject": "ConsultPsic",
+  "cli": {
+    "analytics": false
+  }
 }

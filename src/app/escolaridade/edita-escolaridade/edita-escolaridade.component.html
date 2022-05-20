@@ -1,0 +1,10 @@
+<div class="form-group row">
+  <label class="col-sm-2 col-form-label">Escolaridade</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" [(ngModel)]="TXT_ESCOLARIDADE" placeholder="Digite a Escolaridade">
+  </div>
+</div>
+
+<button class="btn btn-primary" (click)="insereEsc()" *ngIf="esc.COD_ESCOLARIDADE==0">Inserir</button>
+
+<button class="btn btn-primary" (click)="alteraEsc()" *ngIf="esc.COD_ESCOLARIDADE!=0">Alterar</button>
